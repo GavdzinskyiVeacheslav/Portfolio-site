@@ -1,0 +1,41 @@
+{% load static %}
+<!doctype html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+  <div id="slide_lft">
+  Navigation
+    <aside id="slide_in">
+        <img src="{% static 'main/img/я1.jpg' %}" alt="Аватар">
+        <h5>Gavdzinskyi Veacheslav</h5>
+        <style>a { text-decoration: none; }
+        </style>
+        <ul>
+            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i>  Main Page</li></a>
+            <a href="{% url 'about' %}"><li><i class="far fa-address-card"></i>  Portfolio</li></a>
+            <a href="{% url 'news_home' %}"><li><i class="far fa-clipboard"></i> Notes</li></a>
+            <a href="{% url 'create' %}"><button class="btn btn-info"><i class="fas fa-plus-circle"></i>
+            Add new </button></a>
+            <a href="{% url 'games_home' %}"><li><i class="fas fa-puzzle-piece"></i>  Examples</li></a>
+
+        </ul>
+    </aside>
+  </div>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+
+</body>
+</html>

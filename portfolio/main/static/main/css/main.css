@@ -1,0 +1,132 @@
+body {
+    background: #2c2c2c;
+}
+
+#slide_lft{
+position: fixed;
+top: 30px;
+left: 0;
+-webkit-transition-duration: 0.4s;
+-moz-transition-duration: 0.4s;
+-o-transition-duration: 0.4s;
+transition-duration: 0.4s;
+background: #2C2A2A;
+color: #fff;
+padding: 5px;
+font-size: 20px;
+}
+
+#slide_in {
+position: fixed;
+min-height: 550px;
+top: 30px;
+left: -270px;
+-webkit-transition-duration: 0.4s;
+-moz-transition-duration: 0.4s;
+-o-transition-duration: 0.4s;
+transition-duration: 0.4s;
+box-shadow:0 0 10px #777;
+background: #2C2A2A;
+color: #fff;
+width: 235px;
+padding: 10px;
+box-sizing: padding-box;
+}
+
+#slide_lft:hover {
+left: 0px;
+}
+
+#slide_lft:hover #slide_in {
+left: 0;
+}
+
+aside img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    transition: transform .6s ease;
+    font-size: 170%;
+    position: relative; right: 38px;
+    font-size: 20px;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #eb5959;
+    transform: scale(1.05);
+}
+
+main .features {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+main .features p {
+    margin: 10px auto;
+    font-size: 150%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+main .features button {
+    height: 50px;
+    width: 170px;
+    font-size: 18px;
+}
+
+.alert-warning {
+    float: right;
+    clear: both;
+    width: 400px;
+    text-align: right;
+    margin: 10px 50%;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.game h1 {
+   margin-top: 30px;
+   margin-left: 240px;
+   font-size: 20px;
+   color: green;
+   font-family: Georgia, serif;
+   font-weight: bold;
+}
+
+.game b {
+color: yellow;
+}
+
+.game span {
+color: #AEF100;
+}
+
+.game {
+animation: show 4s;
+}
+
+@keyframes show {
+
+from {opacity: 0;} to {opacity: 1;}
+}
+
+.smailik {
+    border-radius: 100px;
+}
+
