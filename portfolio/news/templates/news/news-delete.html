@@ -1,15 +1,15 @@
 {% extends 'main/layout.html' %}
 
-{% block title %}Удаление статьи{% endblock %}
+{% block title %}Deleting a note ...{% endblock %}
 
 {% block content %}
     <div class="features">
-        <h1>Удаление статьи</h1>
+        <h1>Delete exactly?</h1>
          <form method="post">
              {% csrf_token %}
-
-             <button class="btn btn-success" type="submit">Удалить статью</button>
-
+             <br>
+             <button class="btn btn-success" type="submit">Yes</button>
+             <a href="{% url 'news_home' %}" class="btn btn-danger"> NO </a>
          </form>
     </div>
 {% endblock %}

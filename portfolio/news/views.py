@@ -23,6 +23,7 @@ class NewsDeleteView(DeleteView):
 
 class NewsUpdateView(UpdateView):
     model = Articles
+    success_url = '/news/'
     template_name = 'news/create.html'
 
     form_class = ArticlesForm
@@ -34,7 +35,7 @@ def create(request):
         form = ArticlesForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('news_home')
         else:
             error = 'Форма была не верной'
 
