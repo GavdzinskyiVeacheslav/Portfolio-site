@@ -72,6 +72,11 @@ main .features {
     width: 100%;
 }
 
+main .features h1 {
+    font-size: 1.5rem;
+}
+
+
 main .features p {
     margin: 10px auto;
     font-size: 150%;
@@ -85,6 +90,7 @@ main .features button {
     height: 50px;
     width: 170px;
     font-size: 18px;
+    margin-top: -35px;
 }
 
 .alert-warning {

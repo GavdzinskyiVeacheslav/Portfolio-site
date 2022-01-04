@@ -4,27 +4,27 @@ from .forms import ArticlesForm
 from django.views.generic import DetailView, UpdateView, DeleteView
 
 
-def news_home(request):
-    news = Articles.objects.all()
-    return render(request, 'news/news_home.html', {'news': news})
+def notes_home(request):
+    notes = Articles.objects.all()
+    return render(request, 'notes/notes_home.html', {'notes': notes})
 
 
-class NewsDetailView(DetailView):
+class NotesDetailView(DetailView):
     model = Articles
-    template_name = 'news/details_view.html'
+    template_name = 'notes/details_view.html'
     context_object_name = 'article'
 
 
-class NewsDeleteView(DeleteView):
+class NotesDeleteView(DeleteView):
     model = Articles
-    success_url = '/news/'
-    template_name = 'news/news-delete.html'
+    success_url = '/notes/'
+    template_name = 'notes/notes-delete.html'
 
 
-class NewsUpdateView(UpdateView):
+class NotesUpdateView(UpdateView):
     model = Articles
-    success_url = '/news/'
-    template_name = 'news/create.html'
+    success_url = '/notes/'
+    template_name = 'notes/create.html'
 
     form_class = ArticlesForm
 
@@ -35,7 +35,7 @@ def create(request):
         form = ArticlesForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('news_home')
+            return redirect('notes_home')
         else:
             error = 'Форма была не верной'
 
@@ -44,4 +44,4 @@ def create(request):
         'form': form,
         'error': error
     }
-    return render(request, 'news/create.html', data)
+    return render(request, 'notes/create.html', data)
