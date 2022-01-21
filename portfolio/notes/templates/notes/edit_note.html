@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Editing a note{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h3>Editing a note</h3>
+         <form method="post">
+             {% csrf_token %}
+             {{ form.title }}<br>
+             {{ form.full_text }}<br>
+             {{ form.date }}<br>
+             <span>{{ error }}</span>
+             <button class="btn btn-success" type="submit">Confirm</button>
+
+         </form>
+    </div>
+{% endblock %}

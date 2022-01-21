@@ -24,7 +24,7 @@ class NotesDeleteView(DeleteView):
 class NotesUpdateView(UpdateView):
     model = Articles
     success_url = '/notes/'
-    template_name = 'notes/create.html'
+    template_name = 'notes/edit_note.html'
 
     form_class = ArticlesForm
 

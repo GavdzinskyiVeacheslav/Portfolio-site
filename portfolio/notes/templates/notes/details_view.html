@@ -6,6 +6,7 @@
     <div class="features">
         <h1>{{ article.title }}</h1>
         <h5>{{ article.full_text }}</h5>
+        <br><br>
         <a href="{% url 'notes-delete' article.id %}" class="btn btn-danger">Delete</a>
         <a href="{% url 'notes-update' article.id %}" class="btn btn-info">Edit</a>
 

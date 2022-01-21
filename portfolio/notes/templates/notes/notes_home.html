@@ -9,10 +9,15 @@
          {% if notes %}
             {% for el in notes %}
     </div>
-
-    <div class="alert alert-warning">
-        <h3>{{ el.title }}</h3>
-        <a href="{% url 'notes-detail' el.id %}" class="btn btn-warning"> Read</a>
+    <div class="wrapper">
+        <section class="alert alert-warning">
+            <h2 class="notes__title">{{ el.title }}</h2>
+            <div class="notes__items">
+                <div class="notes__item">
+                    <a href="{% url 'notes-detail' el.id %}" class="btn btn-warning"> Read</a>
+                </div>
+            </div>
+        </section>
     </div>
             {% endfor %}
          {% else %}
@@ -22,4 +27,5 @@
          {# Комментарий #}
 
 {% endblock %}
+
 
