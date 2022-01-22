@@ -4,11 +4,24 @@
 
 {% block content %}
     <div class="game">
-        <h1>Welcome to <span>"Number Guess"</span>, I suggest you guess a number in the range from 1 to
-            ... choose yourself <img src="{% static 'main/img/smile.png' %}" width="50" height="50"
-            alt="Не загрузилась" class="smailik"></h1>
+        <h1>Welcome to <span>"Number Guess"</span>, I suggest you guess a number in the range from <span>1</span> to
+            <span>100</span>   <img src="{% static 'main/img/smile.png' %}" width="50" height="50"
+            alt="load error" class="smailik"></h1>
+        <p>By the way, you will only have <span>7</span> attempts, so good luck    <img src="{% static 'main/img/smile.png' %}" width="50" height="50"
+            alt="load error" class="smailik"></p>
+    </div>
+    <p class="guesses"></p>
+    <p class="lastResult"></p>
+    <p class="lowOrHi"></p>
+    <div class="block">
+        <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+    <div class="block_reset">
+        <button class="reset">Start new game</button>
+        <button class="cancel" >Back</button>
     </div>
 
-
+    <script src="{% static 'main/js/script.js' %}"></script>
 
 {% endblock %}

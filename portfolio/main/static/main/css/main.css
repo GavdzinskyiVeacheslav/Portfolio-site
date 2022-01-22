@@ -119,7 +119,7 @@ form {
     width: 50%;
 }
 
-.game h1 {
+.game h1, p {
    margin: auto;
    font-size: 1.5em;
    color: green;
@@ -136,9 +136,16 @@ color: yellow;
 color: #AEF100;
 }
 
-.game {
+.game h1 {
+padding: 15px;
 animation: show 4s;
 }
+
+.game p {
+animation: show 5s;
+text-align: center;
+}
+
 
 @keyframes show {
 
@@ -182,3 +189,116 @@ h1 {
     margin: 15px 0px 25px 0px;
 }
 
+.form-error{
+    color: red;
+}
+
+.git-ico, .telegram-ico{
+    float: right;
+    border-radius: 50%;
+}
+
+.telegram-ico:hover, .git-ico:hover{
+    box-shadow:0 0 10px #777;
+}
+
+.git-ico {
+}
+
+.telegram-ico {
+  margin: 80px -70px 0px 0px;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.contacts {
+    text-align: right;
+    margin: 80px 0px 5px 0px;
+    color: #408BD3;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+  color: #AEF100;
+  font-family: Georgia, serif;
+  font-size: 1.5em;
+  animation: show 5s;
+}
+
+.guessField {
+    width: 10%;
+    height: 37px;
+    animation: show 6s;
+    margin: 0px 8px;
+}
+
+.guesses {
+    margin: 20px 0px 0px 0px;
+}
+
+.guessSubmit {
+    color: #fff;
+    background-color: #198754;
+    height: 35px;
+    font-family: Georgia, serif;
+    animation: show 6s;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 5px;
+   }
+
+.lastResult, .lowOrHi{
+    text-align: center;
+    background: #2c2c2c;
+}
+
+.lastResult {
+    margin: 10px 0px 0px 0px;
+}
+
+.reset {
+    height: 35px;
+    color: #fff;
+    background-color: #198754;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: 500;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.block {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.block_reset{
+    position: relative;
+}
+
+.cancel {
+    height: 35px;
+    color: #fff;
+    background-color: #FF4940;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: 500;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 58%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.lowOrHi {
+  margin: 0px 0px 10px 0px;
+}

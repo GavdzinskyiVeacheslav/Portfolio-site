@@ -1,5 +1,6 @@
 {% extends 'main/layout.html' %}
 
+{% load static %}
 {% block title %}Main Page{% endblock %}
 
 {% block content %}
@@ -8,8 +9,13 @@
 
     </div>
      {% if request.user.is_authenticated %}
-     <li class="last">{{user.username}} | <a href="{% url 'logout' %}">Выйти</a></li>
+     <li class="last">{{user.username}} | <a href="{% url 'logout' %}">Exit</a></li>
      {% else %}
-     <li class="last"><a href="{% url 'register' %}">Регистрация</a> | <a href="{% url 'login' %}">Войти</a></li>
+     <li class="last"><a href="{% url 'register' %}">Register</a> | <a href="{% url 'login' %}">Sign in</a></li>
      {% endif %}
+     <p class="contacts">My contacts:</p><a href="https://github.com/GavdzinskyiVeacheslav" target="_blank"><img src="{% static 'main/img/git-ico.png' %}" width="70" height="70" class="git-ico"
+                    alt="loading error" /></a>
+     <a href="https://t.me/ViaGav" target="_blank"><img src="{% static 'main/img/telegram-ico.png' %}" width="70" height="70" class="telegram-ico"
+                    alt="loading error"/></a>
+
 {% endblock %}

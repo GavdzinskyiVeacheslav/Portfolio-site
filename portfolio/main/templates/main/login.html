@@ -1,5 +1,6 @@
 {% extends 'main/layout.html' %}
 
+{% block title %}Login{% endblock %}
 {% block content %}
 <h1>{{title}}</h1>
 
@@ -13,7 +14,7 @@
     <div class="form-error">{{f.errors}}</div>
 {% endfor %}
 
-    <button class="btn btn-success" type="submit">Войти</button>
+    <button class="btn btn-success" type="submit">Enter</button>
 </form>
 
 {% endblock %}
