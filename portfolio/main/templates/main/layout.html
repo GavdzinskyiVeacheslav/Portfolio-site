@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="shortcut icon" href="{% static 'main/img/favicon.ico' %}" type="image/x-icon">
 </head>
+{% block content %}
 <body>
   <div id="slide_lft">
   <i class="far fa-compass"></i>
@@ -33,10 +34,11 @@
     </aside>
   </div>
     <main>
-        {% block content %}
+        {% block contentrt %}
         {% endblock %}
     </main>
 
 
 </body>
 </html>
+{% endblock %}

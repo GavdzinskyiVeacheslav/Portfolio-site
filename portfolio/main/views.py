@@ -11,7 +11,7 @@ def index(request):
 
 
 def about(request):
-    return render(request, 'main/about.html')
+    return render(request, 'main/bio.html')
 
 class RegisterUser(DataMixin, CreateView):
     form_class = RegisterUserForm
