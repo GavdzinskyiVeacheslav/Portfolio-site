@@ -96,6 +96,8 @@ main .features button {
     margin-top: -35px;
 }
 
+
+/*Notes Style */
 .alert-warning {
     /*float: left;*/
     clear: both;
@@ -103,15 +105,13 @@ main .features button {
     text-align: left;
     margin: 5px 25%;
     z-index: 1;
-
 }
 
 .wrapper {
 	display: grid;
 	min-height: 10vh;
 	grid-template: minmax(10px, auto) 1fr minmax(5px, auto) / 1fr;
-
-	}
+}
 
 form {
     margin-left: auto;
@@ -119,33 +119,30 @@ form {
     width: 50%;
 }
 
-.game h1, p {
+/*Game Example */
+
+.h1game, .text{
    margin: auto;
    font-size: 1.5em;
    color: green;
    font-family: Georgia, serif;
    font-weight: bold;
-
 }
 
-.game b {
-color: yellow;
-}
 
 .game span {
 color: #AEF100;
 }
 
-.game h1 {
+.h1game{
 padding: 15px;
 animation: show 4s;
 }
 
-.game p {
+.text{
 animation: show 5s;
 text-align: center;
 }
-
 
 @keyframes show {
 
@@ -156,75 +153,14 @@ from {opacity: 0;} to {opacity: 1;}
     border-radius: 100px;
 }
 
-.btn-danger, .btn-info {
-position: relative;
-bottom: 18px;
-height: 50px;
-width: 25%;
-padding: 13px;
-margin: 15px;
-}
 
-.last {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 25px 25px;
-    z-index: 3;
-    font-size: 30px;
-    color: #408BD3;
-    list-style: none;
-}
-
-.form-label {
-    color: #fff;
-    display: inline-block;
-    min-width: 150px;
-    vertical-align: top;
-}
-
-h1 {
-    color: #fff;
-    text-align: center;
-    margin: 15px 0px 25px 0px;
-}
-
-.form-error{
-    color: red;
-}
-
-.git-ico, .telegram-ico{
-    float: right;
-    border-radius: 50%;
-}
-
-.telegram-ico:hover, .git-ico:hover{
-    box-shadow:0 0 10px #777;
-}
-
-.git-ico {
-}
-
-.telegram-ico {
-  margin: 80px -70px 0px 0px;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-
-.contacts {
-    text-align: right;
-    margin: 80px 0px 5px 0px;
-    color: #408BD3;
-    font-size: 23px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-label {
+.label {
   color: #AEF100;
   font-family: Georgia, serif;
   font-size: 1.5em;
   animation: show 5s;
 }
+
 
 .guessField {
     width: 10%;
@@ -235,7 +171,9 @@ label {
 
 .guesses {
     margin: 20px 0px 0px 0px;
+    font-size: 20px;
 }
+
 
 .guessSubmit {
     color: #fff;
@@ -248,14 +186,17 @@ label {
     margin: 0px 5px;
    }
 
+
 .lastResult, .lowOrHi{
     text-align: center;
     background: #2c2c2c;
+    font-size: 20px;
 }
 
 .lastResult {
     margin: 10px 0px 0px 0px;
 }
+
 
 .reset {
     height: 35px;
@@ -283,6 +224,7 @@ label {
     position: relative;
 }
 
+
 .cancel {
     height: 35px;
     color: #fff;
@@ -299,6 +241,110 @@ label {
     transform: translate(-50%, -50%)
 }
 
+
 .lowOrHi {
   margin: 0px 0px 10px 0px;
+}
+
+.btn-danger, .btn-info {
+position: relative;
+bottom: 18px;
+height: 50px;
+width: 25%;
+padding: 13px;
+margin: 15px;
+}
+
+/*Main page */
+.last {
+    font-size: 30px;
+    color: #408BD3;
+    list-style: none;
+}
+
+
+.form-label {
+    color: #fff;
+    display: inline-block;
+    min-width: 150px;
+    vertical-align: top;
+    font-size: 18px;
+}
+
+
+.form-error{
+    color: red;
+}
+
+
+.git-ico, .telegram-ico{
+   border-radius: 50%;
+}
+
+.telegram-ico:hover, .git-ico:hover{
+    box-shadow:0 0 10px #777;
+}
+
+.git-ico {
+}
+
+.telegram-ico {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+
+.select{
+   height: 30px;
+   background-color: #B1A4A4;
+   font-weight: 700;
+}
+
+
+.Go{
+    width: 100px;
+    background-color: #198754;
+    font-weight: 700;
+}
+
+.option{
+  font-weight: 700;
+}
+
+.block_main {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.links{
+    margin: 0 0px;
+    padding: 0 0px;
+    float: right;
+}
+
+.avto{
+   margin: 0 0px;
+}
+
+@media (max-width: 1000px){
+    block_main{
+        /* Изменяем направление оси в шапке на вертикальное */
+        flex-direction: column;
+
+        /* Выравниваем элементы в «шапке» влево */
+        align-items: flex-start;
+    }
+}
+
+.contacts {
+    /*
+    text-align: right;
+    margin: 80px 0px 5px 0px;
+    */
+    margin: 0px 10px 0px -40px;
+    color: #408BD3;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
 }
