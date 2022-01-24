@@ -1,10 +1,10 @@
 {% extends 'main/layout.html' %}
 
 {% load static %}
-{% block title %}Main Page{% endblock %}
+{% load i18n %}
+{% block title %}{% trans 'Главная страница' %}{% endblock %}
 
 {% block contentrt %}
-{% load i18n %}
 
 <body class="bodyindex">
     <div class="block_main">

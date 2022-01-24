@@ -3,16 +3,17 @@
 {% block title %}{{ article.title }}{% endblock %}
 
 {% block contentrt %}
+{% load i18n %}
     <div class="features">
         <h1>{{ article.title }}</h1>
         <h5>{{ article.full_text }}</h5>
         <br><br>
         {% if request.user.is_authenticated %}
-            <a href="{% url 'notes-delete' article.id %}" class="btn btn-danger">Delete</a>
-            <a href="{% url 'notes-update' article.id %}" class="btn btn-info">Edit</a>
+            <a href="{% url 'notes-delete' article.id %}" class="btn btn-danger">{% trans 'Удалить' %}</a>
+            <a href="{% url 'notes-update' article.id %}" class="btn btn-info">{% trans 'Редактировать' %}</a>
         {% else %}
         <div class="box">
-        <p class="pwarn">In order to change or delete a note -- ><a class="log" href="{% url 'login' %}">log in</a></p>
+        <p class="pwarn">{% trans 'Для редактирования или удаления' %} -- ><a class="log" href="{% url 'login' %}">{% trans 'Авторизируйтесь' %}</a></p>
         </div>
         {% endif %}
 

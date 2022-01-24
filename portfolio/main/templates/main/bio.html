@@ -1,5 +1,6 @@
 
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +9,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<link rel="stylesheet" href="{% static 'main/css/bio.css' %}">
-	<title>Portfolio</title>
+	<title>{% trans 'Обо мне' %}</title>
 </head>
 
 
@@ -27,12 +28,12 @@
 			<div class="content">
 				<div class="content__body">
 					<div class="content__header">
-						<h1 class="content__title">Welcome</h1>
-						<h2 class="content__subtitle">This is a page with some information about me:</h2>
+						<h1 class="content__title">{% trans 'Привет' %}</h1>
+						<h2 class="content__subtitle">{% trans 'Это страница с информацией обо мне' %}</h2>
 					</div>
 					<div class="content__article">
-						<p>I am 24 years old. Now I am actively studying programming for retraining in IT.</p>
-						<p>Looking for a job as a python backend developer.</p>
+						<p>{% trans 'Мне 24 года. Сейчас я активно изучаю программирование для переквалификации а IT' %}</p>
+						<p>{% trans 'Ищу работу на позицию python backend разработчика' %}</p>
 						<br><br><br><br><br><br><br><br><br><br>
 
 					</div>

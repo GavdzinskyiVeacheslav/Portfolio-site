@@ -1,18 +1,19 @@
 {% extends 'main/layout.html' %}
-
-{% block title %}Editing a note{% endblock %}
+{% load i18n %}
+{% block title %}{% trans 'Редактирование заметки' %}{% endblock %}
 
 {% block contentrt %}
+
     <div class="features">
-        <h3>Editing a note</h3>
+        <h3>{% trans 'Редактирование' %}</h3>
          <form method="post">
              {% csrf_token %}
              {{ form.title }}<br>
              {{ form.full_text }}<br>
              {{ form.date }}<br>
              <span>{{ error }}</span>
-             <button class="btn btn-success" type="submit">Confirm</button>
-             <a href="{% url 'notes_home' %}" class="btn btn-danger"> Cancel </a>
+             <button class="btn btn-success" type="submit">{% trans 'Подтвердить' %}</button>
+             <a href="{% url 'notes_home' %}" class="btn btn-danger">{% trans 'Отменить' %}</a>
 
          </form>
     </div>

@@ -1,6 +1,6 @@
 {% extends 'main/layout.html' %}
-
-{% block title %}Notes{% endblock %}
+{% load i18n %}
+{% block title %}{% trans 'Заметки' %}{% endblock %}
 
 {% block contentrt %}
 
@@ -14,7 +14,7 @@
             <h2 class="notes__title">{{ el.title }}</h2>
             <div class="notes__items">
                 <div class="notes__item">
-                    <a href="{% url 'notes-detail' el.id %}" class="btn btn-warning"> Read</a>
+                    <a href="{% url 'notes-detail' el.id %}" class="btn btn-warning"> {% trans 'Читать' %}</a>
                 </div>
             </div>
         </section>

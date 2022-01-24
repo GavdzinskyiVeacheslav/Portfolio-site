@@ -1,8 +1,9 @@
 {% extends 'main/layout.html' %}
-
-{% block title %}Sign up{% endblock %}
+{% load i18n %}
+{% block title %}{% trans 'Регистрация' %}{% endblock %}
 {% block contentrt %}
-<h1>{{title}}</h1>
+
+<h1>{% trans 'Регистрация' %}</h1>
 
 <form method="post">
     {% csrf_token %}
@@ -13,7 +14,7 @@
 {% endfor %}
 
 
-    <button class="btn btn-success" type="submit">Sign up</button><a href="{% url 'login' %}"> &nbsp;&nbsp;Log in</a>
+    <button class="btn btn-success" type="submit">{% trans 'Регистрация' %}</button><a href="{% url 'login' %}"> &nbsp;{% trans 'Войти' %}</a>
 </form>
 
 {% endblock %}

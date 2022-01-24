@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-24 01:39+0200\n"
+"POT-Creation-Date: 2022-01-24 21:33+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,18 +18,191 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\main\templates\main\index.html:30
+#: .\games\templates\games\games_home.html:4
+msgid "Примеры программ"
+msgstr "Application examples"
+
+#: .\games\templates\games\games_home.html:8
+msgid "Добро пожаловать в игру"
+msgstr "Welcome to"
+
+#: .\games\templates\games\games_home.html:8
+msgid "Угадай число"
+msgstr "Number Guess"
+
+#: .\games\templates\games\games_home.html:8
+msgid "Я предлагаю тебе угадать число в диапазоне от"
+msgstr "I suggest you guess a number in the range from"
+
+#: .\games\templates\games\games_home.html:8
+msgid "до"
+msgstr "to"
+
+#: .\games\templates\games\games_home.html:11
+msgid "Но учти, у тебя будет всего"
+msgstr "By the way, you will only have"
+
+#: .\games\templates\games\games_home.html:11
+msgid "попыток, так что удачи"
+msgstr "attempts, so good luck "
+
+#: .\games\templates\games\games_home.html:18
+msgid "Введите предпологаемое число"
+msgstr "Enter a guess:"
+
+#: .\games\templates\games\games_home.html:19
+msgid "Отправить"
+msgstr "Submit"
+
+#: .\games\templates\games\games_home.html:22
+msgid "Начать новую игру"
+msgstr "Start new game"
+
+#: .\games\templates\games\games_home.html:23
+msgid "Назад"
+msgstr "Back"
+
+#: .\main\forms.py:7 .\main\forms.py:17
+msgid "Логин"
+msgstr "Login"
+
+#: .\main\forms.py:9 .\main\forms.py:18
+msgid "Пароль"
+msgstr "Password"
+
+#: .\main\forms.py:10
+msgid "Повтор пароля"
+msgstr "Repeat password"
+
+#: .\main\templates\main\bio.html:12 .\main\templates\main\layout.html:29
+msgid "Обо мне"
+msgstr "Portfolio"
+
+#: .\main\templates\main\bio.html:31
+msgid "Привет"
+msgstr "Welcome"
+
+#: .\main\templates\main\bio.html:32
+msgid "Это страница с информацией обо мне"
+msgstr "This is a page with some information about me"
+
+#: .\main\templates\main\bio.html:35
+msgid ""
+"Мне 24 года. Сейчас я активно изучаю программирование для переквалификации а "
+"IT"
+msgstr "I am 24 years old. Now I am actively studying programming for retraining in IT"
+
+#: .\main\templates\main\bio.html:36
+msgid "Ищу работу на позицию python backend разработчика"
+msgstr "Looking for a job as a python backend developer"
+
+#: .\main\templates\main\index.html:5
+msgid "Главная страница"
+msgstr "Main page"
+
+#: .\main\templates\main\index.html:31
 msgid "Выход"
 msgstr "Exit"
 
-#: .\main\templates\main\index.html:32
+#: .\main\templates\main\index.html:33 .\main\templates\main\login.html:18
+#: .\main\templates\main\register.html:3 .\main\templates\main\register.html:6
+#: .\main\templates\main\register.html:17
 msgid "Регистрация"
 msgstr "Register"
 
-#: .\main\templates\main\index.html:32
+#: .\main\templates\main\index.html:33 .\main\templates\main\login.html:3
 msgid "Вход"
 msgstr "Sign in"
 
-#: .\main\templates\main\index.html:40
+#: .\main\templates\main\index.html:41
 msgid "Мои контакты:"
 msgstr "My contacts:"
+
+#: .\main\templates\main\layout.html:23
+msgid "Гавдзинский Вячеслав"
+msgstr "Gavdzinskyi Veacheslav"
+
+#: .\main\templates\main\layout.html:28
+msgid "Главная"
+msgstr "Main page"
+
+#: .\main\templates\main\layout.html:30
+#: .\notes\templates\notes\notes_home.html:3
+msgid "Заметки"
+msgstr "Notes"
+
+#: .\main\templates\main\layout.html:33
+msgid "Добавить"
+msgstr "Add new"
+
+#: .\main\templates\main\layout.html:35
+msgid "Примеры"
+msgstr "Examples"
+
+#: .\main\templates\main\login.html:6
+msgid "Авторизация"
+msgstr "Authorization"
+
+#: .\main\templates\main\login.html:18 .\main\templates\main\register.html:17
+msgid "Войти"
+msgstr "Log in"
+
+#: .\notes\templates\notes\details_view.html:12
+msgid "Удалить"
+msgstr "Delete"
+
+#: .\notes\templates\notes\details_view.html:13
+msgid "Редактировать"
+msgstr "Edit"
+
+#: .\notes\templates\notes\details_view.html:16
+msgid "Для редактирования или удаления"
+msgstr "To edit or delete"
+
+#: .\notes\templates\notes\details_view.html:16
+msgid "Авторизируйтесь"
+msgstr "Log in"
+
+#: .\notes\templates\notes\edit_note.html:3
+msgid "Редактирование заметки"
+msgstr "Note editing..."
+
+#: .\notes\templates\notes\edit_note.html:8
+msgid "Редактирование"
+msgstr "Editing"
+
+#: .\notes\templates\notes\edit_note.html:15
+msgid "Подтвердить"
+msgstr "Confirm"
+
+#: .\notes\templates\notes\edit_note.html:16
+msgid "Отменить"
+msgstr "Cancel"
+
+#: .\notes\templates\notes\notes-delete.html:3
+msgid "Удаление заметки ..."
+msgstr "Deleting a note"
+
+#: .\notes\templates\notes\notes-delete.html:7
+msgid "Вы уверены что хотите удалить заметку?"
+msgstr "Delete exactly"
+
+#: .\notes\templates\notes\notes-delete.html:11
+msgid "Да"
+msgstr "Yes"
+
+#: .\notes\templates\notes\notes-delete.html:12
+msgid "Нет"
+msgstr "No"
+
+#: .\notes\templates\notes\notes_home.html:17
+msgid "Читать"
+msgstr "Read"
+
+#: .\portfolio\settings.py:126
+msgid "Russian"
+msgstr ""
+
+#: .\portfolio\settings.py:127
+msgid "English"
+msgstr ""
