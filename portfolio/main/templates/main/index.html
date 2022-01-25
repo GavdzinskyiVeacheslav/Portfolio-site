@@ -6,7 +6,7 @@
 
 {% block contentrt %}
 
-<body class="bodyindex">
+<body class="body__index">
     <div class="block_main">
 
     <form class="lang" action="{% url 'set_language' %}" method="post">{% csrf_token %}
@@ -16,21 +16,22 @@
             {% get_available_languages as LANGUAGES %}
             {% get_language_info_list for LANGUAGES as languages %}
             {% for language in languages %}
-                <option class="option" value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                <option class="option" value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %}
+                        selected{% endif %}>
                     {{ language.name_local }} ({{ language.code }})
                 </option>
             {% endfor %}
         </select>
-        <input class="Go" type="submit" value="Go">
+        <input class="go__button" type="submit" value="Go">
     </form>
 
 
-
-     <div class="avto">
+     <div class="wrapper_reg_log_text">
         {% if request.user.is_authenticated %}
-        <li class="last">{{user.username}} | <a href="{% url 'logout' %}">{% trans 'Выход' %}</a></li>
+        <li class="reg_log_text">{{user.username}} | <a href="{% url 'logout' %}">{% trans 'Выход' %}</a></li>
         {% else %}
-        <li class="last"><a href="{% url 'register' %}">{% trans 'Регистрация' %}</a> | <a href="{% url 'login' %}">{% trans 'Вход' %}</a></li>
+        <li class="reg_log_text"><a href="{% url 'register' %}">{% trans 'Регистрация' %}</a> |
+            <a href="{% url 'login' %}">{% trans 'Вход' %}</a></li>
         {% endif %}
      </div>
 
@@ -38,10 +39,12 @@
     </div>
 
     <div class="links">
-        <p class="contacts">{% trans 'Мои контакты:' %}</p><a href="https://github.com/GavdzinskyiVeacheslav" target="_blank"><img src="{% static 'main/img/git-ico.png' %}" width="40" height="40" class="git-ico"
+        <p class="contacts__text">{% trans 'Мои контакты:' %}</p>
+        <a href="https://github.com/GavdzinskyiVeacheslav" target="_blank">
+        <img src="{% static 'main/img/git-ico.png' %}" width="40" height="40" class="git-ico"
                     alt="loading error" /></a>
-        <a href="https://t.me/ViaGav" target="_blank"><img src="{% static 'main/img/telegram-ico.png' %}" width="40" height="40" class="telegram-ico"
-                    alt="loading error"/></a>
+        <a href="https://t.me/ViaGav" target="_blank"><img src="{% static 'main/img/telegram-ico.png' %}"
+                width="40" height="40" class="telegram-ico" alt="loading error"/></a>
     </div>
 </body>
 

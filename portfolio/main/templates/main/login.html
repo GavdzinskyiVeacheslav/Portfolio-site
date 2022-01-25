@@ -11,11 +11,12 @@
 <div class="form-error">{{ form.non_field_errors }}</div>
 
 {% for f in form %}
-<p><label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}:</label>{{f}}</p>
+<p><label class="form_text_title" for="{{ f.id_for_label }}">{{ f.label }}:</label>{{f}}</p>
     <div class="form-error">{{f.errors}}</div>
 {% endfor %}
 
-    <button class="btn btn-success" type="submit">{% trans 'Войти' %}</button><a href="{% url 'register' %}"> &nbsp;&nbsp;{% trans 'Регистрация' %}</a>
+    <button class="btn btn-success" type="submit">{% trans 'Войти' %}</button><a
+        href="{% url 'register' %}"> &nbsp;&nbsp;{% trans 'Регистрация' %}</a>
 </form>
 
 {% endblock %}

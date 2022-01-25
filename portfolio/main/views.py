@@ -3,8 +3,8 @@ from django.views.generic import CreateView
 from django.contrib.auth.views import LoginView
 from django.urls import reverse_lazy
 from django.contrib.auth import logout, login
-from main.forms import *
-from .utils import *
+from main.forms import RegisterUserForm, LoginUserForm
+from .utils import DataMixin
 
 def index(request):
     return render(request, 'main/index.html')

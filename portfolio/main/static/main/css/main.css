@@ -3,7 +3,7 @@ body {
     padding: 0px 1.2em;
 }
 
-.bodyindex {
+.body__index {
     background: url('../img/bg_repeat.jpg')
 }
 
@@ -12,6 +12,7 @@ h1{
  text-align: center;
 }
 
+/* slide panel */
 #slide_lft{
 position: fixed;
 top: 30px;
@@ -42,7 +43,6 @@ color: #fff;
 width: 235px;
 padding: 10px;
 box-sizing: padding-box;
-
 }
 
 #slide_lft:hover {
@@ -77,6 +77,8 @@ aside ul li:hover, aside ul a:hover {
     transform: scale(1.05);
 }
 
+/*--------------------------*/
+
 main .features {
     margin-top: 30px;
     color: #fff;
@@ -105,10 +107,8 @@ main .features button {
     margin-top: -35px;
 }
 
-
 /*Notes Style */
 .alert-warning {
-    /*float: left;*/
     clear: both;
     width: 400px;
     text-align: left;
@@ -116,7 +116,7 @@ main .features button {
     z-index: 1;
 }
 
-.wrapper {
+.wrapper__notes {
 	display: grid;
 	min-height: 10vh;
 	grid-template: minmax(10px, auto) 1fr minmax(5px, auto) / 1fr;
@@ -128,9 +128,9 @@ form {
     width: 50%;
     margin-top: 50px;
 }
+/*--------------------------*/
 
 /*Game Example */
-
 .h1game, .text{
    margin: auto;
    font-size: 1.5em;
@@ -138,7 +138,6 @@ form {
    font-family: Georgia, serif;
    font-weight: bold;
 }
-
 
 .game span {
 color: #AEF100;
@@ -163,14 +162,12 @@ from {opacity: 0;} to {opacity: 1;}
     border-radius: 100px;
 }
 
-
-.label {
+.guessNumber {
   color: #AEF100;
   font-family: Georgia, serif;
   font-size: 1.5em;
   animation: show 5s;
 }
-
 
 .guessField {
     width: 10%;
@@ -179,11 +176,10 @@ from {opacity: 0;} to {opacity: 1;}
     margin: 0px 8px;
 }
 
-.guesses {
+.previous_guess_text {
     margin: 20px 0px 0px 0px;
     font-size: 20px;
 }
-
 
 .guessSubmit {
     color: #fff;
@@ -194,8 +190,7 @@ from {opacity: 0;} to {opacity: 1;}
     font-size: 20px;
     font-weight: 500;
     margin: 0px 5px;
-   }
-
+}
 
 .lastResult, .lowOrHi{
     text-align: center;
@@ -206,7 +201,6 @@ from {opacity: 0;} to {opacity: 1;}
 .lastResult {
     margin: 10px 0px 0px 0px;
 }
-
 
 .reset {
     height: 35px;
@@ -234,7 +228,6 @@ from {opacity: 0;} to {opacity: 1;}
     position: relative;
 }
 
-
 .cancel {
     height: 35px;
     color: #fff;
@@ -251,7 +244,6 @@ from {opacity: 0;} to {opacity: 1;}
     transform: translate(-50%, -50%)
 }
 
-
 .lowOrHi {
   margin: 0px 0px 10px 0px;
 }
@@ -265,15 +257,16 @@ padding: 13px;
 margin: 15px;
 }
 
+/*--------------------------*/
+
 /*Main page */
-.last {
+.reg_log_text {
     font-size: 30px;
     color: #408BD3;
     list-style: none;
 }
 
-
-.form-label {
+.form_text_title {
     color: #fff;
     display: inline-block;
     min-width: 150px;
@@ -281,11 +274,9 @@ margin: 15px;
     font-size: 18px;
 }
 
-
 .form-error{
     color: red;
 }
-
 
 .git-ico, .telegram-ico{
    border-radius: 50%;
@@ -303,15 +294,13 @@ margin: 15px;
   filter: alpha(opacity=90);
 }
 
-
 .select{
    height: 30px;
    background-color: #B1A4A4;
    font-weight: 700;
 }
 
-
-.Go{
+.go__button{
     width: 100px;
     background-color: #198754;
     font-weight: 700;
@@ -325,7 +314,6 @@ margin: 15px;
    display: flex;
    align-items: center;
    justify-content: center;
-
 }
 
 .links{
@@ -334,7 +322,7 @@ margin: 15px;
     float: right;
 }
 
-.avto{
+.wrapper_reg_log_text{
    margin: 0 0px;
 }
 
@@ -348,30 +336,28 @@ margin: 15px;
     }
 }
 
-.contacts {
-    /*
-    text-align: right;
-    margin: 80px 0px 5px 0px;
-    */
+.contacts__text {
     margin: 0px 10px 0px -40px;
     color: #408BD3;
     font-size: 23px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.log {
+/*--------------------------*/
+
+
+.notes_link_login{
     color: #fff;
     margin: 0px 50px 0px 0px;
 }
 
-.pwarn {
+.notes_warning_text {
     color: #000;
     font-size: 1em;
     font-weight: 500;
     margin: 0px 0px 0px 0px;
 }
 
-.box {
+.box_for_notes_warning {
    display: flex;
-
 }

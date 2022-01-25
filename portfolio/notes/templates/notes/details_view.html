@@ -12,8 +12,9 @@
             <a href="{% url 'notes-delete' article.id %}" class="btn btn-danger">{% trans 'Удалить' %}</a>
             <a href="{% url 'notes-update' article.id %}" class="btn btn-info">{% trans 'Редактировать' %}</a>
         {% else %}
-        <div class="box">
-        <p class="pwarn">{% trans 'Для редактирования или удаления' %} -- ><a class="log" href="{% url 'login' %}">{% trans 'Авторизируйтесь' %}</a></p>
+        <div class="box_for_notes_warning">
+        <p class="notes_warning_text">{% trans 'Для редактирования или удаления' %} -- ><a
+                class="notes_link_login" href="{% url 'login' %}">{% trans 'Авторизируйтесь' %}</a></p>
         </div>
         {% endif %}
 

@@ -9,12 +9,13 @@
     {% csrf_token %}
 
 {% for f in form %}
-<p><label class="form-label" for="{{ f.id_for_label}}">{{f.label}}:</label>{{f}}</p>
+<p><label class="form_text_title" for="{{ f.id_for_label}}">{{f.label}}:</label>{{f}}</p>
 <div class="form-error">{{ f.errors }}</div>
 {% endfor %}
 
 
-    <button class="btn btn-success" type="submit">{% trans 'Регистрация' %}</button><a href="{% url 'login' %}"> &nbsp;{% trans 'Войти' %}</a>
+    <button class="btn btn-success" type="submit">{% trans 'Регистрация' %}</button><a
+        href="{% url 'login' %}"> &nbsp;{% trans 'Войти' %}</a>
 </form>
 
 {% endblock %}

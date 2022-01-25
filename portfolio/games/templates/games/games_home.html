@@ -5,17 +5,20 @@
 
 {% block contentrt %}
     <div class="game">
-        <h1 class="h1game">{% trans 'Добро пожаловать в игру' %} <span> "{% trans 'Угадай число' %}"</span>, {% trans 'Я предлагаю тебе угадать число в диапазоне от' %} <span> 1 </span> {% trans 'до' %}
+        <h1 class="h1game">{% trans 'Добро пожаловать в игру' %} <span> "{% trans 'Угадай число' %}"</span>,
+            {% trans 'Я предлагаю тебе угадать число в диапазоне от' %} <span> 1 </span> {% trans 'до' %}
             <span>100</span>   <img src="{% static 'main/img/smile.png' %}" width="50" height="50"
             alt="load error" class="smailik"></h1>
-        <p class="text">{% trans 'Но учти, у тебя будет всего' %} <span> 7 </span> {% trans 'попыток, так что удачи' %} <img src="{% static 'main/img/smile.png' %}" width="50" height="50"
+        <p class="text">{% trans 'Но учти, у тебя будет всего' %} <span> 7 </span> {% trans 'попыток, так что удачи' %}
+            <img src="{% static 'main/img/smile.png' %}" width="50" height="50"
             alt="load error" class="smailik"></p>
     </div>
-    <p class="guesses"></p>
+    <p class="previous_guess_text"></p>
     <p class="lastResult"></p>
     <p class="lowOrHi"></p>
     <div class="block">
-        <label class="label" for="guessField">{% trans 'Введите предпологаемое число' %}: </label><input type="text" id="guessField" class="guessField">
+        <label class="guessNumber" for="guessField">{% trans 'Введите предпологаемое число' %}:
+        </label><input type="text" id="guessField" class="guessField">
         <input type="submit" value="{% trans 'Отправить' %}" class="guessSubmit">
     </div>
     <div class="block_reset">

@@ -1,6 +1,6 @@
 var randomNumber = Math.floor(Math.random() * 100) + 1;
 
-var guesses = document.querySelector('.guesses');
+var guesses = document.querySelector('.previous_guess_text');
 var lastResult = document.querySelector('.lastResult');
 var lowOrHi = document.querySelector('.lowOrHi');
 
