@@ -107,6 +107,7 @@ body{
 }
 
 .inscription {
- text-align: center;
+ position: relative;
+ left: 45%;
  z-index: 3;
 }
